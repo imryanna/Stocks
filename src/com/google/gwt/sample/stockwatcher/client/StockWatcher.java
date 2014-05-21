@@ -54,7 +54,7 @@ public class StockWatcher implements EntryPoint {
 
 			public void onSuccess(LoginInfo result) {
 				//TODO Nadine added this
-				System.out.println("Success!");
+				System.out.println("Success!!!");
 				//
 				loginInfo = result;
 				if(loginInfo.isLoggedIn()) {
@@ -62,6 +62,8 @@ public class StockWatcher implements EntryPoint {
 				} else {
 					loadLogin();
 				}
+				// TODO Ryanna's change
+				System.out.println("onModuleLoad");
 			}
 		});
 	}
